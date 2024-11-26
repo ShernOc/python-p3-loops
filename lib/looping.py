@@ -14,13 +14,14 @@ happy_new_year()
 
 # returns the list of squared elements
 #use range
-def square_integers(int_list):
-    return [square**2 for square in int_list]
-result = square_integers([5,2,4])
-print(result)
+square_integers_array =([1, 2, 3, 4, 5])
+def square_integers(items):
+    return [items**2 for items in square_integers_array]
 
-    
+print(square_integers(square_integers_array))
 
+ 
+#for in range: 
 def fizzbuzz():
     for x in range(1,101): 
         if x % 3 == 0 and x % 5 ==0: 
@@ -31,3 +32,5 @@ def fizzbuzz():
             print("Buzz")
         else: 
             print(x)
+
+fizzbuzz()
